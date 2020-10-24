@@ -1,6 +1,9 @@
 # Compiler
 CC = gcc
 
+# Make directory command
+MAKE = mkdir -p
+
 # Remove command
 RM = rm -rf
 
@@ -10,9 +13,9 @@ OBJDIR = .obj
 BINDIR = bin
 
 # Files
-ARRAY_O = .obj/array.o
-ARRAY_C = src/array.c
-ARRAY_H = src/array.h
+ARRAY_O = $(OBJDIR)/array.o
+ARRAY_C = $(SRCDIR)/array.c
+ARRAY_H = $(SRCDIR)/array.h
 
 SRC = $(filter-out $(SRCDIR)/array.c, $(wildcard $(SRCDIR)/*.c))
 OBJ = $(SRC:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
@@ -20,19 +23,19 @@ BIN = $(SRC:$(SRCDIR)/%.c=$(BINDIR)/%)
 
 .PRECIOUS: $(OBJ)
 
-all: $(BINDIR) $(OBJDIR) $(BIN)
+all: $(BIN)
 
-$(BINDIR):
-	mkdir -p $(BINDIR)
-
-$(OBJDIR):
-	mkdir -p $(OBJDIR)
-
-$(BINDIR)/%: $(OBJDIR)/%.o $(ARRAY_O)
+$(BINDIR)/%: $(OBJDIR)/%.o $(ARRAY_O) $(BINDIR)
 	$(CC) $< $(ARRAY_O) -o $@
 
-$(OBJDIR)/%.o: $(SRCDIR)/%.c
+$(BINDIR):
+	$(MAKE) $(BINDIR)
+
+$(OBJDIR)/%.o: $(SRCDIR)/%.c $(OBJDIR)
 	$(CC) -c $< -o $@
+
+$(OBJDIR):
+	$(MAKE) $(OBJDIR)
 
 $(ARRAY_O): $(ARRAY_C) $(ARRAY_H)
 	$(CC) -c $(ARRAY_C) -o $@
