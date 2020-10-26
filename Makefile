@@ -25,13 +25,13 @@ BIN = $(SRC:$(SRCDIR)/%.c=$(BINDIR)/%)
 
 all: $(BIN)
 
-$(BINDIR)/%: $(OBJDIR)/%.o $(ARRAY_O) $(BINDIR)
+$(BINDIR)/%: $(OBJDIR)/%.o $(ARRAY_O) | $(BINDIR)
 	$(CC) $< $(ARRAY_O) -o $@
 
 $(BINDIR):
 	$(MAKE) $(BINDIR)
 
-$(OBJDIR)/%.o: $(SRCDIR)/%.c $(OBJDIR)
+$(OBJDIR)/%.o: $(SRCDIR)/%.c | $(OBJDIR)
 	$(CC) -c $< -o $@
 
 $(OBJDIR):
