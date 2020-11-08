@@ -5,6 +5,7 @@ My implementations of some algorithms in C.
 ## Algorithms
 
 - [Bubble sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/bubble_sort.c)
+- [Cocktail sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/cocktail_sort.c)
 - [Counting sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/counting_sort.c)
 - [Insertion sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/insertion_sort.c)
 - [Merge sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/merge_sort.c)
