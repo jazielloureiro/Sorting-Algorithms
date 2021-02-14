@@ -1,6 +1,6 @@
 # Sorting Algorithms
 
-My implementations of some algorithms in C.
+My implementations of some sorting algorithms in C.
 
 ## Algorithms
 
@@ -10,7 +10,7 @@ My implementations of some algorithms in C.
 - [Insertion sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/insertion_sort.c)
 - [Merge sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/merge_sort.c)
 - [Odd-Even sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/odd-even_sort.c)
-- [Shell sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/shell_sort.c)
+- [Quick sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/quick_sort.c)
 - [Selection sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/selection_sort.c)
 - [Shell sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/shell_sort.c)
 
