@@ -4,15 +4,15 @@ My implementations of some sorting algorithms in C.
 
 ## Algorithms
 
-- [Bubble sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/bubble_sort.c)
-- [Cocktail sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/cocktail_sort.c)
-- [Counting sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/counting_sort.c)
-- [Insertion sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/insertion_sort.c)
-- [Merge sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/merge_sort.c)
-- [Odd-Even sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/odd-even_sort.c)
-- [Quick sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/quick_sort.c)
-- [Selection sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/selection_sort.c)
-- [Shell sort](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/shell_sort.c)
+- [Bubble](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/bubble.c)
+- [Cocktail](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/cocktail.c)
+- [Counting](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/counting.c)
+- [Insertion](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/insertion.c)
+- [Merge](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/merge.c)
+- [Odd-Even](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/odd-even.c)
+- [Quick](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/quick.c)
+- [Selection](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/selection.c)
+- [Shell](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/shell.c)
 
 ## Install
 
@@ -26,4 +26,4 @@ My implementations of some sorting algorithms in C.
 
 Or, if you prefer to build a specific algorithm, you can:
 
-`$ make bin/quick_sort`
+`$ make bin/quick`
