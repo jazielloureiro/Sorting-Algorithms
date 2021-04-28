@@ -1,25 +1,22 @@
-#include "array.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-#define MAX_RAND 100
+#include "array.h"
 
 void fill_array(int *array){
-	int i;
+	const int MAX_RAND = 100;
 
 	srand((unsigned int) time(NULL));
 	
-	for(i = 0; i < SIZE_ARRAY; i++)
+	for(int i = 0; i < SIZE_ARRAY; i++)
 		array[i] = rand() % MAX_RAND;
 }
 
 void print_array(char *name, int *array){
-	int i;
-	
 	printf("%s = {", name);
 	
-	for(i = 0; i < SIZE_ARRAY; i++)
+	for(int i = 0; i < SIZE_ARRAY; i++)
 		printf("%d, ", array[i]);
 		
 	printf("\b\b}\n");

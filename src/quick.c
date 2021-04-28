@@ -1,9 +1,9 @@
 #include "array.h"
 
 int partition(int *array, int start, int end){
-	int i, pivot;
+	int pivot = end - 1;
 	
-	for(i = start, pivot = end - 1; i < pivot; i++)
+	for(int i = start; i < pivot; i++)
 		if(array[i] < array[pivot])
 			swap(&array[i], &array[start++]);
 

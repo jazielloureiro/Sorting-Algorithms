@@ -1,17 +1,17 @@
-#include "array.h"
 #include <stdbool.h>
 
+#include "array.h"
+
 void cocktail_sort(int *array){
-	int start, end;
-	bool swapped;
+	bool swapped = true;
 	
-	for(start = 0, end = SIZE_ARRAY - 1, swapped = true;
+	for(int start = 0, end = SIZE_ARRAY - 1;
 	    swapped && start < end;
-	    start++, end--){
-	    	int i;
+	    start++, end--)
+	{
 		swapped = false;
 
-		for(i = start; i < end; i++){
+		for(int i = start; i < end; i++){
 			if(array[i] > array[i + 1]){
 				swap(&array[i], &array[i + 1]);
 				swapped = true;
@@ -21,7 +21,7 @@ void cocktail_sort(int *array){
 		if(!swapped)
 			break;
 
-		for(i = end - 1; i > start; i--){
+		for(int i = end - 1; i > start; i--){
 			if(array[i] < array[i - 1]){
 				swap(&array[i], &array[i - 1]);
 				swapped = true;

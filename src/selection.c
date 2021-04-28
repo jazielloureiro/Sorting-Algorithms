@@ -1,12 +1,10 @@
 #include "array.h"
 
 void selection_sort(int *array){
-	int i;
-	
-	for(i = 0; i < SIZE_ARRAY - 1; i++){
-		int j, min;
+	for(int i = 0; i < SIZE_ARRAY - 1; i++){
+		int min = i;
 		
-		for(j = i + 1, min = i; j < SIZE_ARRAY; j++)
+		for(int j = i + 1; j < SIZE_ARRAY; j++)
 			if(array[min] > array[j])
 				min = j;
 				

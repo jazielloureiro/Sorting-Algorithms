@@ -1,12 +1,8 @@
 #include "array.h"
 
 void insertion_sortH(int *array, int h){
-	int i;
-	
-	for(i = h; i < SIZE_ARRAY; i += h){
-		int j;
-		
-		for(j = i; j - h >= 0; j -= h){
+	for(int i = h; i < SIZE_ARRAY; i += h){
+		for(int j = i; j - h >= 0; j -= h){
 			if(array[j] < array[j - h])
 				swap(&array[j], &array[j - h]);
 			else

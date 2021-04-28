@@ -1,10 +1,10 @@
 #include "array.h"
 
 void bubble_sort(int *array){
-	int max = SIZE_ARRAY - 1, i, j;
+	const int MAX = SIZE_ARRAY - 1;
 	
-	for(i = 0; i < max; i++)
-		for(j = 0; j < max - i; j++)
+	for(int i = 0; i < MAX; i++)
+		for(int j = 0; j < MAX - i; j++)
 			if(array[j] > array[j + 1])
 				swap(&array[j], &array[j + 1]);
 }
