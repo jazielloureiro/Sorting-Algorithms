@@ -14,16 +14,20 @@ My implementations of some sorting algorithms in C.
 - [Selection](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/selection.c)
 - [Shell](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/shell.c)
 
-## Install
+## Installation
 
-1. If you've git installed, type:
+1. Clone this repository:
 
-`$ git clone https://github.com/jazielloureiro/Sorting-Algorithms`
+```sh
+git clone https://github.com/jazielloureiro/Sorting-Algorithms
+```
 
-2. Go into the new directory, and type:
+2. Go into the new directory and run the Makefile:
 
-`$ make all`
+```sh
+cd Sorting-Algorithms && make all
+```
 
-Or, if you prefer to build a specific algorithm, you can:
+## License
 
-`$ make bin/quick`
+[MIT](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/LICENSE)
