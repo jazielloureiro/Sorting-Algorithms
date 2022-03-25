@@ -19,7 +19,14 @@ void heapify(int *array, int n){
 		sift_down(array, i, n);
 }
 
-void heap_sort(int *array){
+void heap_sort(int *array, int n){
+	heapify(array, n);
+
+	while(n > 0){
+		n--;
+		swap(&array[0], &array[n]);
+		sift_down(array, 0, n);
+	}
 }
 
 int main(){
@@ -29,7 +36,7 @@ int main(){
 	
 	print_array("Unsorted array", array);
 	
-	heap_sort(array);
+	heap_sort(array, SIZE_ARRAY);
 	
 	print_array("Sorted array", array);
 
