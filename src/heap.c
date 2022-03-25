@@ -1,17 +1,22 @@
 #include "array.h"
 
-void sift_down(int *array, int i, int n) {
+void sift_down(int *array, int i, int n){
 	int j = i * 2 + 1;
 
-	if(j < n) {
+	if(j < n){
 		if(j + 1 < n)
 			if(array[j + 1] > array[j])
 				j++;
-		if(array[i] < array[j]) {
+		if(array[i] < array[j]){
 			swap(&array[i], &array[j]);
 			sift_down(array, j, n);
 		}
 	}
+}
+
+void heapify(int *array, int n){
+	for(int i = (n - 2) / 2; i >= 0; i--)
+		sift_down(array, i, n);
 }
 
 void heap_sort(int *array){
