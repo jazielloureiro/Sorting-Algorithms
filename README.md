@@ -7,6 +7,7 @@ My implementations of some sorting algorithms in C.
 - [Bubble](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/bubble.c)
 - [Cocktail](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/cocktail.c)
 - [Counting](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/counting.c)
+- [Heap](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/heap.c)
 - [Insertion](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/insertion.c)
 - [Merge](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/merge.c)
 - [Odd-Even](https://github.com/jazielloureiro/Sorting-Algorithms/blob/master/src/odd-even.c)
